@@ -119,7 +119,7 @@ for indDisc=1:length(discovery_time)
         w = preparation_time(indPrep);
         
         for indT = 1:nT
-            len =length(dataBS{indT});
+            len =size(dataBS{indT},2);
             % here we can change exprnd to deterministic for real
             % simulation
             dataBS{indT}(4,:) =  dt*ones(1,len);%exprnd(dt,1,len); % discovery duration
