@@ -31,10 +31,10 @@ simTime = 4*60*60; %sec Total Simulation time should be more than 100.
 mu = 2; %Expected bloc dur =1/mu sec
 R = 100; %coverage range, 100,56,23
 
-discovery = [1 5 20 100 200]*10^(-3);
+discovery = [1 5 20]*10^(-3);
 preparation = [10 20 50]*10^(-3);
 densityBL = [0.01 0.1];
-densityBS = [200 300 400 500]*10^(-6);
+densityBS = [200 300 400]*10^(-6);
 connectivity = [1 2 3 4];
 
 
