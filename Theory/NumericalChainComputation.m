@@ -9,12 +9,12 @@ ht = 5; %height transmitter (BS)
 frac = (hb-hr)/(ht-hr);
 mu = 2; %Expected bloc dur =1/mu sec
 u = mu;
-R = 23; %m Radius
+R = 100; %m Radius
 lambda_B = [0.01 0.1]; % blocker density
 C = 2*V.*lambda_B*frac/pi;
 
 
-lambda_BS =[1000,1500,2000]*10^(-6); %densityBS
+lambda_BS =[200,300,400,500]*10^(-6); %densityBS
 density_limits = [30,40,50,60,70];      % up to how many BS in coverage area, it will be ok since poisson distr.
 K_list = [1,2,3,4];                      % Degree of Connectivity
 w_list = 1000./[10,20,50]; %1000./[10,15,25,30,70,200,1000];      %Connection establishment times
