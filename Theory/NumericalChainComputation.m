@@ -1,7 +1,5 @@
 clear;
 
-clear;
-
 V = 1; %velocity of blocker m/s
 hb = 1.8; %height blocker
 hr = 1.4; %height receiver (UE)
