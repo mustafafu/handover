@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function [output, blockage_events] = BlockageSim(s_mobility,BS_input)
 % Written by Mustafa F Ozkoc, Athanasios Koutsaftis, Rajeev Kumar
 % Based on Ish Jain's Script
