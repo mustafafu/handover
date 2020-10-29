@@ -20,5 +20,5 @@ for ii=1:num_files
 end
 
 final_results = mean(results_array,6);
-
+PARAMS = aa.PARAMS;
 save(strcat('./data/finalresults_R',num2str(R),'m-',num2str(num_files),'files.mat'),'final_results','discovery','preparation','densityBL','densityBS','connectivity','results_array','PARAMS')
