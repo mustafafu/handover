@@ -33,9 +33,18 @@ R = 100; %coverage range, 100,56,23
 
 discovery = [1 5 20]*10^(-3);
 preparation = [10 20 50]*10^(-3);
-densityBL = [0.01 0.1];
 densityBS = [200 300 400]*10^(-6);
 connectivity = [1 2 3 4];
+densityBL = [0.01 0.1];
+
+
+PARAMS = struct('COVERAGERANGE',R,...
+    'DISCOVERY',discovery,...
+    'PREPARATION',preparation,...
+    'DENSITYBS',densityBS,...
+    'CONNECTIVITY',connectivity,...
+    'DENSITYBL',densityBL);
+
 
 
 nTorig = densityBS*pi*R^2;
@@ -106,5 +115,5 @@ if ~exist(savefolder, 'dir')
        mkdir(savefolder)
 end
 
-save(strcat('data/Coverage',num2str(R),'m/output','_',num2str(aID),'.mat'),'finaldata')
-save(strcat('data/Coverage',num2str(R),'m/blockages','_',num2str(aID),'.mat'),'blockageDurations')
+save(strcat('data/Coverage',num2str(R),'m/output','_',num2str(aID),'.mat'),'finaldata','PARAMS')
+save(strcat('data/Coverage',num2str(R),'m/blockages','_',num2str(aID),'.mat'),'blockageDurations','PARAMS')
