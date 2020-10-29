@@ -22,3 +22,11 @@ Then run,
 sbatch --array=1-999 submit.sbatch
 ```
 which will produce 999 iteration of simulations.
+
+**Parsing the Simulation Data :**
+After a large number of monte carlo simulations, we get an output file for each instance of the simulation. We are interested in the averaga outage probability and durations. A parsing of the data is required. 
+
+For each coverage range, change the *DataProcess.m* script accordingly and it will produce a combined output in *./data/* folder. Submit the job as follows
+```
+sbatch submit_data_process.sbatch
+```
