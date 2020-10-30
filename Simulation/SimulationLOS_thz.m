@@ -29,11 +29,11 @@ ht = 5; %height transmitter (BS)
 frac = (hb-hr)/(ht-hr);
 simTime = 4*60*60; %sec Total Simulation time should be more than 100.
 mu = 2; %Expected bloc dur =1/mu sec
-R = 56; %coverage range, 100,56,23
+R = 23; %coverage range, 100,56,23
 
 discovery = [20 50 200]*10^(-3);
 preparation = [10 20 50]*10^(-3);
-densityBS = [500 750 1000]*10^(-6);
+densityBS = [1000 1500 2000]*10^(-6);
 connectivity = [1 2 3 4];
 densityBL = [0.01 0.1];
 

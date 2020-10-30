@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --mem=2GB
-#SBATCH --time=01:00:00
+#SBATCH --time=00:15:00
 #SBATCH --cpus-per-task=1
 #SBATCH --output=logs/%a_%A.out
 #SBATCH --error=logs/%a_%A.err
