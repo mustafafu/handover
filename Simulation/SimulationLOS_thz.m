@@ -115,5 +115,5 @@ if ~exist(savefolder, 'dir')
        mkdir(savefolder)
 end
 
-save(strcat('data/Coverage',num2str(R),'m/output','_',num2str(aID),'.mat'),'finaldata','PARAMS')
-save(strcat('data/Coverage',num2str(R),'m/blockages','_',num2str(aID),'.mat'),'blockageDurations','PARAMS')
+save(strcat('data/Coverage',num2str(R),'m/output_2','_',num2str(aID),'.mat'),'finaldata','PARAMS')
+save(strcat('data/Coverage',num2str(R),'m/blockages_2','_',num2str(aID),'.mat'),'blockageDurations','PARAMS')
