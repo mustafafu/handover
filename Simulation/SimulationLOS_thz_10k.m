@@ -19,7 +19,7 @@ if(isempty(aID))
   warning('aID is empty. Replacing it with 1.')  
   aID = '2'; %Runs only for first value of AP density when aID=1
 end
-rng(str2double(aID),'twister');
+rng(str2double(aID)+10000,'twister');
 
 
 V = 1; %velocity of blocker m/s
@@ -115,5 +115,5 @@ if ~exist(savefolder, 'dir')
        mkdir(savefolder)
 end
 
-save(strcat('data/Coverage',num2str(R),'m/output','_',num2str(aID),'.mat'),'finaldata','PARAMS')
-save(strcat('data/Coverage',num2str(R),'m/blockages','_',num2str(aID),'.mat'),'blockageDurations','PARAMS')
+save(strcat('data/Coverage',num2str(R),'m/output_10k','_',num2str(aID),'.mat'),'finaldata','PARAMS')
+save(strcat('data/Coverage',num2str(R),'m/blockages_10k','_',num2str(aID),'.mat'),'blockageDurations','PARAMS')
