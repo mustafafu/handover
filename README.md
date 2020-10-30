@@ -30,4 +30,4 @@ For each coverage range, change the *DataProcess.m* script accordingly and it wi
 ```
 sbatch submit_data_process.sbatch
 ```
-  *Sharing data* : setfacl -m u:ps3857:rwx -R $SCRATCH/<project>
+  *Sharing data* : setfacl -m u:ps3857:rwx -R $SCRATCH/[project]
