@@ -30,4 +30,10 @@ For each coverage range, change the *DataProcess.m* script accordingly and it wi
 ```
 sbatch submit_data_process.sbatch
 ```
-  *Sharing data* : setfacl -m u:ps3857:rwx -R $SCRATCH/[project]
+  *Sharing data* : 
+  ```
+  setfacl -m u:mfo254:rwx -R $SCRATCH/[project]
+  ```
+  ```
+  rsync -v /scratch/ps3857/handover/Simulation/data/Coverage23m/output*  /scratch/mfo254/handover/Simulation/data/Coverage23m/.
+  ```
